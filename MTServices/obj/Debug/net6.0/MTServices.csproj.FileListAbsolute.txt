@@ -1,0 +1,17 @@
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTServices.deps.json
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTServices.dll
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTServices.pdb
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTDataAccess.dll
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTModels.dll
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTDataAccess.pdb
+C:\Users\fabe\Desktop\Test\.net\MTServices\bin\Debug\net6.0\MTModels.pdb
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.csproj.AssemblyReference.cache
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.AssemblyInfoInputs.cache
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.AssemblyInfo.cs
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.csproj.CoreCompileInputs.cache
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.csproj.CopyComplete
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.dll
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\refint\MTServices.dll
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\MTServices.pdb
+C:\Users\fabe\Desktop\Test\.net\MTServices\obj\Debug\net6.0\ref\MTServices.dll
