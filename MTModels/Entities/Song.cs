@@ -8,9 +8,9 @@ namespace MTModels.Entities
 {
     public class Song : Base
     { 
-        public int SongID { get; set; }
-        public int AlbumID { get; set; }
-        public int ArtistID { get; set; }
+        public long SongID { get; set; }
+        public long AlbumID { get; set; }
+        public long ArtistID { get; set; }
         public string Title { get; set; }
         public decimal Bpm { get; set; }
         public string TimeSignature { get; set; }
@@ -22,4 +22,5 @@ namespace MTModels.Entities
         public bool SongSpecificPatches { get; set; }
         public bool ProPresenter { get; set; }
     }
+
 }

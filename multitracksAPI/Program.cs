@@ -11,7 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Configuration.AddJsonFile("appsettings.json");
 builder.Configuration.AddEnvironmentVariables();
-builder.Services.AddTransient<IArtists, Artists>();
+builder.Services.AddScoped<IArtists, Artists>();
+builder.Services.AddScoped<ISongs, Songs>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
