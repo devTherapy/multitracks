@@ -12,7 +12,12 @@
       <link rel="icon" href="https://mtracks.azureedge.net/public/images/icon/favicon/favicon-svg2.svg" type="image/svg+xml">
       <meta name="theme-color" content="#ffffff">
       <link media="all" rel="stylesheet" href="https://mtracks.azureedge.net/public/css/v22/main.min.css?v=4">
-      <style type="text/css">.is-slide-hidden{position:absolute;left:-9999px;top:-9999px;display:block;}</style>
+      <style type="text/css">.is-slide-hidden{position:absolute;left:-9999px;top:-9999px;display:block;}
+          .remodal-bg {
+              top: -6px;
+              left: 10px;
+          }
+      </style>
    </head>
    <body id="about" class="premium standard">
       <form>

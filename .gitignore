@@ -1,7 +1,16 @@
 Core/MTDataAccess/bin/
 Core/MTDataAccess/obj/
+Core/MTModels/bin
+Core/MTModels/obj
+Core/MTServices/bin
+Core/MTServices/obj
 DB/bin/
 DB/obj/
 Web/multitracks.com/multitracks.com/Bin/
+Web/multitracksAPI/bin
+Web/multitracksAPI/obj
 packages/
  DB/*.dbmld
+ DB/*.jfm
+/DB/MultiTracksDB.jfm
+/DB/MultiTracksDB.dbmdl

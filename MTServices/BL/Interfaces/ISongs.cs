@@ -5,7 +5,7 @@ namespace MTServices.BL.Interfaces
 {
     public interface ISongs
     {
-        Response<Song> GetSongs(Paging paging);
+        Response<SongDto> GetSongs(Paging paging);
 
     };
 }

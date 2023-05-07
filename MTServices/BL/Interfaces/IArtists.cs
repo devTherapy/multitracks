@@ -10,6 +10,9 @@ namespace MTServices.BL.Interfaces
 {
     public interface IArtists
     {
-        Response<Artist> GetArtistByName(string name);
+        Response<GetArtistDto> GetArtistByName(string name);
+
+        Response<CreateArtistResponse> CreateArtist(CreateArtist model);
+
     }
 }

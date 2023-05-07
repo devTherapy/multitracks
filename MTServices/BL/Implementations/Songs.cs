@@ -18,7 +18,7 @@ namespace MTServices.BL.Implementations
             _configuration = configuration;
             _connectionString = _configuration["ConnectionString"];
         }
-        public Response<Song> GetSongs(Paging paging)
+        public Response<SongDto> GetSongs(Paging paging)
         {
             var pageSize = paging.PageSize <= 0 ? 10 : paging.PageSize;
             var pageNumber = paging.PageNumber <= 0 ? 1 : paging.PageNumber;
@@ -32,7 +32,7 @@ namespace MTServices.BL.Implementations
                 _sql.Parameters.Add("@PageSize", pageSize);
                 _sql.Parameters.Add("@PageNumber", pageNumber);
 
-                var songs = new SongDto();
+                var response = new SongDto();
 
                 var reader = _sql.ExecuteStoredProcedureDataReader("GetSongs");
 
@@ -55,32 +55,29 @@ namespace MTServices.BL.Implementations
                         ProPresenter = reader.GetBoolean("propresenter"),
                         DateCreation = reader.GetDateTime("dateCreation")
                     };
-                    songs.SongsList.Add(song);
+                    response.SongsList.Add(song);
                 }
-
-                Metadata metadata = null;
 
                 if (reader.NextResult())
                 {
-                    while (reader.Read())
+                    reader.Read();
+
+                    response.MetaData  = new Metadata
                     {
-                        metadata = new Metadata
-                        {
-                            PageSize = pageSize,
-                            PageNumer = pageNumber,
-                            TotalRecords = reader.GetInt32("TotalCount"),
-                        };
-                    }
+                        PageSize = pageSize,
+                        PageNumer = pageNumber,
+                        TotalRecords = reader.GetInt32("TotalCount"),
+                    };
                 }
 
-                if (!songs.SongsList.Any()) return new Response<Song>(true, "No record found for this input", System.Net.HttpStatusCode.OK);
+                if (!response.SongsList.Any()) return new Response<SongDto>(true, "No record found for this input", System.Net.HttpStatusCode.OK);
 
-                return new Response<Song>(true, "operation successful", songs.SongsList, System.Net.HttpStatusCode.OK, metadata);
+                return new Response<SongDto>(true, "operation successful", response, System.Net.HttpStatusCode.OK);
             }
 
             catch (Exception ex)
             {
-                return new Response<Song>(false, ex.Message, System.Net.HttpStatusCode.InternalServerError);
+                return new Response<SongDto>(false, ex.Message, System.Net.HttpStatusCode.InternalServerError);
             }
 
         }
